@@ -1,9 +1,5 @@
 # coding
-test repository
+creating a website in go  
 
 ## description
-this is a test of git
-there once was a knight named sir meepsalot  
-king meat  
-meap man  
-the returns arent going to like  
+this is a test website to get started  
