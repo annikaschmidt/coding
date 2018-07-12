@@ -1,10 +1,14 @@
 package main
 
-import "fmt"
+import (
+  "log"
+  "net/http"
+)
 
 func main() {
-	//var str1 string
-	//str1 = helloWorld()
-	str1 := helloWorld()
-	fmt.Printf(str1)
+  fs := http.FileServer(http.Dir("static"))
+  http.Handle("/", fs)
+
+  log.Println("Listening...")
+  http.ListenAndServe(":3000", nil)
 }
